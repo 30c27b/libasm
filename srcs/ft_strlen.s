@@ -14,10 +14,3 @@ global _ft_strlen
 
 ; size_t ft_strlen(const char *)
 _ft_strlen:
-	MOV eax, -1
-
-loop:
-	INC eax
-	CMP byte [rdi + rax], 0
-	JNE loop
-	RET
