@@ -6,7 +6,7 @@
 #    By: ancoulon <ancoulon@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/19 11:03:15 by ancoulon          #+#    #+#              #
-#    Updated: 2021/02/16 11:35:17 by ancoulon         ###   ########.fr        #
+#    Updated: 2021/02/16 16:05:41 by ancoulon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,11 @@ RM			= rm -f
 
 SRCS		= \
 			srcs/ft_strlen.s \
-			srcs/ft_strcmp.s
+			srcs/ft_strcmp.s \
+			srcs/ft_strcpy.s \
+			srcs/ft_read.s \
+			srcs/ft_write.s \
+			srcs/ft_strdup.s
 
 
 OBJS		= $(SRCS:.s=.o)
