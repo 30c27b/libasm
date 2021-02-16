@@ -6,7 +6,7 @@
 #    By: ancoulon <ancoulon@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/19 11:03:15 by ancoulon          #+#    #+#              #
-#    Updated: 2021/01/19 11:28:58 by ancoulon         ###   ########.fr        #
+#    Updated: 2021/02/16 11:35:17 by ancoulon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,11 @@ CFLAGS		= -Wall -Wextra -Werror
 
 RM			= rm -f
 
-SRCS		= srcs/ft_strlen.s
+SRCS		= \
+			srcs/ft_strlen.s \
+			srcs/ft_strcmp.s
+
+
 OBJS		= $(SRCS:.s=.o)
 
 TESTN		= tester
