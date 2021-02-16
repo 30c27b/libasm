@@ -13,4 +13,17 @@
 global _ft_strlen
 
 ; size_t ft_strlen(const char *)
+;
+; Inputs: RDI = string
+; Return: RAX = length of the string
 _ft_strlen:
+	mov		rax, 0
+
+_ft_strlen_loop:
+	cmp		byte [rdi + rax], 0
+	je		_ft_strlen_ret
+	inc		rax
+	jmp		_ft_strlen_loop
+
+_ft_strlen_ret:
+	ret
