@@ -2,16 +2,16 @@ global _ft_strlen
 
 ; size_t ft_strlen(const char *s)
 ;
-; Inputs: RDI = string s
-; Return: RAX = length of the string
+; Inputs: RDI = char *s
+; Return: RAX = size_t
 _ft_strlen:
-	mov		rax, 0				; setting return value to 0
+	mov		rax, 0
 
 _ft_strlen_loop:
-	cmp		byte [rdi + rax], 0	; comparing byte at string[rax] with 0
-	je		_ft_strlen_ret		; if string[rax] == 0, returning rax
-	inc		rax					; rax++
-	jmp		_ft_strlen_loop		; go to the start of the loop
+	cmp		byte [rdi + rax], 0
+	je		_ft_strlen_ret
+	inc		rax
+	jmp		_ft_strlen_loop
 
 _ft_strlen_ret:
-	ret							; return
+	ret

@@ -1,15 +1,16 @@
 extern _ft_strlen
 extern _ft_strcpy
 extern _malloc
-exter ___error
+extern ___error
 
 global _ft_strdup
 
 %define ENOMEM 12
 
-; char * strdup(const char *s1)
+; char *strdup(const char *s1)
 ;
-; RDI, RSI, RDX
+; Inputs: RDI = char *s1
+; Return: RAX = char *
 _ft_strdup:
 	call	_ft_strlen
 	inc		rax
@@ -25,7 +26,4 @@ _ft_strdup:
 	ret
 
 _ft_strdup_error:
-	call	___error
-	mov		[rax], ENOMEM
-	mov		rax, 0
 	ret

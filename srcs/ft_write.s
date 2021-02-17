@@ -2,11 +2,14 @@ extern ___error
 
 global _ft_write
 
+%define SYS_write 0x2000004
+
 ; ssize_t write(int fildes, const void *buf, size_t nbyte)
 ;
-; RDI, RSI, RDX
+; Inputs: RDI = int fildes, RSI = void *buf, RDX = size_t nbytes
+; Return: RAX = ssize_t
 _ft_write:
-	mov		rax, 0x2000004
+	mov		rax, SYS_write
 	syscall
 	jc		_ft_write_error
 	ret

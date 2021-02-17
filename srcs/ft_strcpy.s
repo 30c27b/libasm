@@ -2,8 +2,8 @@ global _ft_strcpy
 
 ; char *strcpy(char *dst, const char *src)
 ;
-; Inputs: RDI = string dst, RSI = string src
-; Return: RAX = string
+; Inputs: RDI = char *dst, RSI = char *src
+; Return: RAX = char *
 _ft_strcpy:
 	push	rbx
 	mov		rax, -1
