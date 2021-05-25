@@ -6,7 +6,7 @@
 /*   By: ancoulon <ancoulon@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/22 11:02:19 by ancoulon          #+#    #+#             */
-/*   Updated: 2021/02/22 11:02:32 by ancoulon         ###   ########.fr       */
+/*   Updated: 2021/05/25 11:54:19 by ancoulon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,14 +75,6 @@ void test_strcpy(void)
 	
 	free(str_libasm);
 	free(str_system);
-
-	
-	// printf("%s\n ", str_libasm);
-	// printf("%s\n ", str_system);
-
-	// printf("[SYSTEM]: [%s]\n", ft_strcpy(str_libasm, NULL));
-	// printf("[LIBASM]: [%s]\n\n", strcpy(str_system, NULL));
-
 }
 
 void test_write(void)
@@ -245,14 +237,6 @@ void test_strdup(void)
 	printf("[LIBASM] : %s\n\n",str_libasm);
 	free(str_system);
 	free(str_libasm);
-
-	// str_system = strdup(NULL);
-	// str_libasm = ft_strdup(NULL);
-	// printf("[SYSTEM] : %s\n",str_system);
-	// printf("[LIBASM] : %s\n\n",str_libasm);
-	// free(str_system);
-	// free(str_libasm);
-
 }
 
 
